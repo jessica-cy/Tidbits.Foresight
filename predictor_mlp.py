@@ -56,7 +56,3 @@ class MLPPredictor(Predictor):
 
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
-
-predictor = MLPPredictor(x_train, y_train, x_test, y_test)
-predictor.fit()
-predictor.evaluate()

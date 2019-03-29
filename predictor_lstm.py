@@ -54,9 +54,3 @@ class LSTMPredictor(Predictor):
         print('Test accuracy:', score[1])
 
 
-(x_train, y_train), (x_test, y_test) = mnist.load_data()
-
-predictor = LSTMPredictor(x_train, y_train, x_test, y_test)
-predictor.fit()
-predictor.evaluate()
-
