@@ -5,8 +5,7 @@ Gets to 98.40% test accuracy after 20 epochs
 2 seconds per epoch on a K520 GPU.
 """
 from keras import Sequential
-from keras.datasets import mnist
-from keras.layers import Dense, Dropout, LSTM, Activation
+from keras.layers import Dense, LSTM, Activation
 from keras.optimizers import RMSprop
 from keras.utils import to_categorical
 
