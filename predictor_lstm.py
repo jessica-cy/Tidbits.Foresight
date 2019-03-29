@@ -10,10 +10,11 @@ from keras.layers import Dense, Dropout, LSTM, Activation
 from keras.optimizers import RMSprop
 from keras.utils import to_categorical
 
+from predictor import Predictor
 
-class LSTMPredictor:
+
+class LSTMPredictor(Predictor):
     batch_size = 128
-    num_classes = 10
     epochs = 20
 
     def __init__(self, x_train, y_train, x_test, y_test):
